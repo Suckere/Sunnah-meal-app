@@ -1,4 +1,4 @@
-// MealPlan Class - OOP Concept with CRUD Operations
+
 class MealPlan {
     constructor() {
         this.meals = this.loadFromStorage();
@@ -44,4 +44,5 @@ class MealPlan {
         const saved = localStorage.getItem('sunnahMealPlan');
         return saved ? JSON.parse(saved) : [];
     }
+
 }
