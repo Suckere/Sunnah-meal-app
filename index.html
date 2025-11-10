@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sunnah Meal Planner - Web Version</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌿 Sunnah Meal Planner</h1>
+            <p class="subtitle">Find recipes using Sunnah foods like dates, honey, olives, and more!</p>
+        </header>
+        
+        <div class="search-section">
+            <input type="text" id="ingredientInput" placeholder="Try: dates, honey, olives, milk, grapes">
+            <button id="searchBtn">Search Recipes</button>
+        </div>
+
+        <div id="recipeResults">
+            <p class="loading">Enter an ingredient above to find Sunnah-based recipes!</p>
+        </div>
+
+        <div class="meal-plan-section">
+            <h2>📅 My Weekly Meal Plan</h2>
+            <div class="meal-input">
+                <input type="text" id="mealInput" placeholder="Add custom meal to plan">
+                <button id="addMealBtn">Add Meal</button>
+            </div>
+            <ul id="mealList"></ul>
+        </div>
+    </div>
+
+    <script src="recipe.js"></script>
+    <script src="mealplan.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
