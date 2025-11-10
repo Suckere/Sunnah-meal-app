@@ -11,7 +11,7 @@ class Recipe {
         const usedList = this.usedIngredients.map(ing => ing.name).join(', ');
         const missedList = this.missedIngredients.map(ing => ing.name).join(', ');
         
-        // Escape quotes in title for onclick attribute
+       
         const safeTitle = this.title.replace(/'/g, "\\'").replace(/"/g, '\\"');
         
         return `
@@ -26,4 +26,5 @@ class Recipe {
             </div>
         `;
     }
+
 }
